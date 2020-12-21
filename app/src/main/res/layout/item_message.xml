@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_message_bg"
+    android:layout_marginBottom="1dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/message_user"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:padding="8dp">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="8dp"
+        android:text="User"
+        android:textStyle="normal|bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/message_item"
-            android:text="My Message"
-            android:textSize="28dp"
-            android:padding="8dp" />
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="8dp"
+        android:text="12.12.2020 9:52" />
 
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/message_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:padding="8dp"
+        android:text="My Message"
+        android:textSize="28dp" />
+
+
 </RelativeLayout>
